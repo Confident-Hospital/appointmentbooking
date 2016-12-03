@@ -30,7 +30,7 @@
     "angular-filepicker": "^1.1.4"
   },
   "resolutions": {
-    "angular": "1.5.8",
+    "angular": "1.4.8",
     "fullcalendar": ">=3.0.0"
   }
 }
