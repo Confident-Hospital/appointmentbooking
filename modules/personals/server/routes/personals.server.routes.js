@@ -17,6 +17,9 @@ module.exports = function (app) {
     .get(personals.read)
     .put(personals.update)
     .delete(personals.delete);
+    
+  app.route('/api/personal/picture')
+  .post(personals.createPersonalPicture);
 
   // Finish by binding the personal middleware
   app.param('personalId', personals.personalByID);
