@@ -24,7 +24,8 @@
                     <div class="col-sm-6 text-center form-group">
                         <div class="text-center">
                             <div class="text-center">
-                                <img ng-src="{{imageURL}}" class="img-thumbnail user-profile-picture">
+                                <img ng-src="{{imageURL}}"  ng-if="imageURL" class="img-thumbnail user-profile-picture">
+                                <img ng-src="modules/personals/img/profile/default.png"  ng-if="!imageURL" class="img-thumbnail user-profile-picture">
                             </div>
                             <div class="text-center ">
                                 <span class="btn btn-success btn-file"> Select Image <input type="file" nv-file-select uploader="uploader"> </span>
